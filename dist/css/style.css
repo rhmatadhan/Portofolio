@@ -7,7 +7,7 @@
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin-inline: auto;
 }
 
@@ -19,7 +19,13 @@
 
 /* Navbar */
 .navbar {
-  padding: 30px 0;
+  padding: 10px 0;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-box {
@@ -40,7 +46,12 @@
 
 .navbar-box .menu li a {
   text-decoration: none;
-  color: black;
+  color: #00ABE4;
+  font-weight: 500;
+}
+
+.navbar-box .menu li a:hover {
+  color: #E9F1FA;
 }
 
 @media (max-width: 768px) {
@@ -59,7 +70,7 @@
 /* Hero */
 .hero {
   padding: 100px 0;
-  background-color: #f9f9f9;
+  background-color: #E9F1FA;
 }
 
 .hero-content {
@@ -73,14 +84,14 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #333;
+  color: #00ABE4;
 }
 
 .hero-left p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
-  color: #666;
+  color: #333;
 }
 
 .hero-buttons {
@@ -89,8 +100,8 @@
 }
 
 .btn-primary {
-  background-color: #333;
-  color: white;
+  background-color: #00ABE4;
+  color: #FFFFFF;
   border: none;
   padding: 15px 30px;
   font-size: 1rem;
@@ -101,13 +112,13 @@
 }
 
 .btn-primary:hover {
-  background-color: #555;
+  background-color: #007ACC;
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: #333;
-  border: 2px solid #333;
+  color: #00ABE4;
+  border: 2px solid #00ABE4;
   padding: 15px 30px;
   font-size: 1rem;
   font-weight: 600;
@@ -117,8 +128,8 @@
 }
 
 .btn-secondary:hover {
-  background-color: #333;
-  color: white;
+  background-color: #00ABE4;
+  color: #FFFFFF;
 }
 
 .hero-right {
@@ -214,7 +225,7 @@
 /* Skills */
 .skills {
   padding: 100px 0;
-  background-color: #f9f9f9;
+  background-color: #E9F1FA;
 }
 
 .skills-content h2 {
@@ -222,7 +233,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #333;
+  color: #00ABE4;
 }
 
 .skills-grid {
@@ -232,7 +243,7 @@
 }
 
 .skill-category {
-  background-color: #fff;
+  background-color: #FFFFFF;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -248,7 +259,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
+  color: #00ABE4;
   text-align: center;
 }
 
@@ -259,17 +270,18 @@
 
 .skill-list li {
   font-size: 1rem;
-  color: #666;
+  color: #333;
   margin-bottom: 10px;
   padding: 10px 15px;
-  background-color: #f0f0f0;
+  background-color: #E9F1FA;
   border-radius: 5px;
   text-align: center;
   transition: background-color 0.3s;
 }
 
 .skill-list li:hover {
-  background-color: #e0e0e0;
+  background-color: #00ABE4;
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -392,3 +404,228 @@
   }
 }
 /* Proyek */
+
+/* Contact */
+.contact {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 15px;
+  width: 30px;
+  text-align: center;
+}
+
+.contact-item span,
+.contact-item a {
+  font-size: 1rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #333;
+}
+
+.contact-form h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info h3,
+  .contact-form h3 {
+    text-align: center;
+  }
+}
+/* Contact */
+
+/* Footer */
+.footer {
+  background-color: #00ABE4;
+  color: #FFFFFF;
+  padding: 50px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-left h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+
+.footer-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #E9F1FA;
+}
+
+.footer-center h4,
+.footer-right h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}
+
+.footer-center ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin-bottom: 10px;
+}
+
+.footer-center ul li a {
+  color: #E9F1FA;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-center ul li a:hover {
+  color: #FFFFFF;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #E9F1FA;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #007ACC;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #E9F1FA;
+  margin: 0;
+}
+
+.back-to-top {
+  color: #E9F1FA;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-to-top:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* Footer */
