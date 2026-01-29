@@ -1,0 +1,2 @@
+- [x] Add HTML structure for hero section in index.html
+- [x] Add CSS styles for hero section in dist/css/style.css
